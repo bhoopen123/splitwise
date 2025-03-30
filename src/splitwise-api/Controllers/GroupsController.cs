@@ -6,9 +6,9 @@ namespace Splitwise.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GroupController : ControllerBase
+    public class GroupsController : ControllerBase
     {
-        public GroupController()
+        public GroupsController()
         {
         }
 
