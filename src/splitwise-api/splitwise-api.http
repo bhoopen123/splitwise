@@ -1,6 +1,6 @@
-@splitwise_api_HostAddress = http://localhost:5161
+@splitwise_api_HostAddress = https://localhost:7166/api
 
-GET {{splitwise_api_HostAddress}}/weatherforecast/
+GET {{splitwise_api_HostAddress}}/users/1
 Accept: application/json
 
 ###
