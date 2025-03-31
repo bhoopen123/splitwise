@@ -2,7 +2,7 @@
 
 namespace Splitwise.Reposiroties
 {
-    public interface IUserRepository : IDisposable
+    public interface IUserRepository
     {
         Task<User?> GetUser(long id);
         Task<User> CreateUser(User user);

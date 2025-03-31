@@ -11,24 +11,6 @@ namespace Splitwise.Reposiroties
             this.splitwiseDbContext = splitwiseDbContext;
         }
 
-        private bool disposed = false;
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    splitwiseDbContext.Dispose();
-                }
-            }
-            this.disposed = true;
-        }
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
         public async Task<User?> GetUser(long id)
         {
             return await splitwiseDbContext.Users.FindAsync(id);
