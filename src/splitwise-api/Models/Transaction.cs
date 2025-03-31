@@ -12,17 +12,5 @@
         }
     }
 
-    public class BaseModel
-    {
-        public long Id { get; set; }
-        public DateTime CreatedAtUtc { get; set; }
-        public DateTime ModifiedAtUtc { get; set; }
-    }
 
-    public class User : BaseModel
-    {
-        public required string Name { get; set; }
-        public required string Phone { get; set; }
-        public required string Password { get; set; }
-    }
 }
