@@ -12,7 +12,8 @@ namespace Splitwise.Api.Controllers
         {
         }
 
-        public async Task<ActionResult<SettleGroupResponse>> SettleGroup(SettleGroupRequest request)
+        [HttpPost("settle-group/{groupId}")]
+        public async Task<ActionResult<SettleGroupResponse>> SettleGroup(long groupId)
         {
 
             // Logic to settle group
